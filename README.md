@@ -59,3 +59,16 @@ FROM olist_order_payments
 GROUP BY payment_type
 ORDER BY total_revenue DESC;
 ```
+### 3. Ödeme Kanalı Bazlı Ortalama Ürün Fiyat Analizi (3-Table JOIN)
+> **İş Amacı:** Farklı ödeme yöntemlerini tercih eden müşterilerin ortalama sepet/ürün harcama eğilimlerini tespit etmek.
+```sql
+SELECT 
+    p.payment_type,
+    ROUND(AVG(i.price)::numeric, 2) AS avg_product_price
+FROM orders o
+INNER JOIN order_items i ON o.order_id = i.order_id
+INNER JOIN order_payments p ON o.order_id = p.order_id
+GROUP BY p.payment_type
+ORDER BY avg_product_price DESC;
+```
+**İçgörü:** Kredi kartı kullanan müşterilerin ortalama ürün harcaması (126.48 BRL), nakit/havale (Boleto) veya debit kart kullananlara kıyasla belirgin şekilde daha yüksektir.
