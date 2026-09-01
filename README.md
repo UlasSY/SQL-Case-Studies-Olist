@@ -37,3 +37,7 @@ LEFT JOIN olist_orders o ON c.customer_id = o.customer_id
 GROUP BY c.customer_state
 HAVING COUNT(o.order_id) > 100
 ORDER BY total_orders DESC;
+
+
+### 2. **Ödeme Yöntemleri** & Taksit Analizi
+İş Amacı: Müşterilerin ödeme tercihlerini ve ortalama taksit sayılarını ödeme tipine göre gruplayarak finansal işlem dağılımını incelemek.
