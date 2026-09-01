@@ -72,3 +72,29 @@ GROUP BY p.payment_type
 ORDER BY avg_product_price DESC;
 ```
 **İçgörü:** Kredi kartı kullanan müşterilerin ortalama ürün harcaması (126.48 BRL), nakit/havale (Boleto) veya debit kart kullananlara kıyasla belirgin şekilde daha yüksektir.
+
+## 📚 Modular SQL Query Repository (Sorgu Kütüphanesi)
+Projenin teknik derinliğini ve SQL hakimiyetini gösteren Seviye 1'den Seviye 6'ya kadar hazırlanmış 30 adet pratik sorgusu **Queries.sql** dosyasında modüler olarak sunulmuştur:
+
+- Seviye 1: Mutlak Temeller (SELECT, WHERE, ORDER BY, LIMIT)
+
+- Seviye 2: Aggregate Fonksiyonlar (COUNT, DISTINCT, GROUP BY)
+
+- Seviye 3: Gelişmiş Filtreleme & Metrikler (SUM, AVG, HAVING)
+
+- Seviye 4: İki Tablolu Birleştirmeler (INNER JOIN)
+
+- Seviye 5: İleri Analitik Sorgular (3-Table JOIN + HAVING)
+
+- Seviye 6: İş Senaryoları & Lojistik Analizi (LEFT JOIN, Geciken Teslimat Analizleri)
+
+## 🚀 How to Run (Kurulum ve Çalıştırma)
+**1.** Depoyu klonlayın:       
+git clone [https://github.com/UlasSY/SQL-Case-Studies-Olist.git](https://github.com/UlasSY/SQL-Case-Studies-Olist.git)
+
+**2.** PostgreSQL ortamınızda veritabanını oluşturup schema.sql dosyasını çalıştırarak tabloları oluşturun.
+
+**3.** Veri setini yükledikten sonra analitik sorguları çalıştırmak için queries.sql dosyasını kullanabilirsiniz.
+
+## 📜 License
+Bu proje MIT lisansı altında yayınlanmıştır.
