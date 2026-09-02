@@ -7,10 +7,13 @@ Süreç boyunca ham e-ticaret verileri ilişkisel veritabanı mimarisine göre m
 
 ---
 
-## 🛠️ Technical Stack & Methods (Teknik Araçlar ve Yöntemler)
-* **Environment / RDBMS:** PostgreSQL / DBeaver
-* **Query Techniques:** Multi-table Joins (`INNER`, `LEFT`), Multi-level Aggregations (`GROUP BY`, `HAVING`), Relational Schema Design (PK/FK), Filtering & Ordering.
+## 🛠️ Technical Stack & Infrastructure (Teknik Mimari)
+* **Cloud RDBMS:** Neon DB (Serverless PostgreSQL)
+* **Database Client:** DBeaver
+* **Query Techniques:** Multi-table Joins (`INNER`, `LEFT`), Multi-level Aggregations (`GROUP BY`, `HAVING`), Relational Schema Design (PK/FK), Filtering & Ordering, Type Casting (`::numeric`).
 * **Data Domain:** E-Commerce, Logistics, Financial Transactions & Payment Methods.
+
+> **☁️ Infrastructure Note:** Bu projede veritabanı altyapısı olarak serverless PostgreSQL hizmeti sunan **Neon DB** kullanılmıştır. Veri seti bulut ortamında barındırılarak DBeaver üzerinden yönetilmiştir.
 
 ---
 
@@ -27,7 +30,7 @@ Analiz kapsamında ilişkisel bütünlük (Primary Key / Foreign Key) standartla
 * `orders` (1) ─── (N) `order_items`
 * `orders` (1) ─── (N) `order_payments`
 
-> **Not:** Veri tabanı oluşturma ve tablo tanımlama script'lerine repository içerisindeki [`schema.sql`](./schema.sql) dosyasından ulaşabilirsiniz.
+> **Not:** Veri tabanı DDL ve tablo oluşturma script'lerine [`schema.sql`](./schema.sql) dosyasından ulaşabilirsiniz.
 
 ---
 
