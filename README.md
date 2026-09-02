@@ -76,6 +76,13 @@ ORDER BY avg_product_price DESC;
 ```
 **İçgörü:** Kredi kartı kullanan müşterilerin ortalama ürün harcaması (126.48 BRL), nakit/havale (Boleto) veya debit kart kullananlara kıyasla belirgin şekilde daha yüksektir.
 
+## 📚 Repository SQL Structure (Sorgu Yapısı)
+Projedeki SQL sorguları iki ayrı modüler dosyada organize edilmiştir:
+
+1. queries_modular.sql: Seviye 1'den Seviye 6'ya kadar kademeli olarak zorlaşan, temellerden ileri analitiğe kadar 30 adet pratik sorgusu.
+
+2. queries_explained.sql: Belirli iş senaryolarına ve problem çözümlerine odaklanan 10 adet açıklayıcı ve detaylı analitik sorgu.
+
 ## 📚 Modular SQL Query Repository (Sorgu Kütüphanesi)
 Projenin teknik derinliğini ve SQL hakimiyetini gösteren Seviye 1'den Seviye 6'ya kadar hazırlanmış 30 adet pratik sorgusu **Queries.sql** dosyasında modüler olarak sunulmuştur:
 
