@@ -100,7 +100,7 @@ Projenin teknik derinliğini ve SQL hakimiyetini gösteren Seviye 1'den Seviye 6
 
 ## 🚀 How to Run (Kurulum ve Çalıştırma)
 **1.** Depoyu klonlayın:       
-git clone [https://github.com/UlasSY/SQL-Case-Studies-Olist.git](https://github.com/UlasSY/SQL-Case-Studies-Olist.git)
+git clone [https://github.com/UlasSY/SQL-Case-Studies-Olist.git](https://github.com/UlasSY/SQL-Case-Studies-Olist.git) 
 
 **2.** PostgreSQL ortamınızda veritabanını oluşturup schema.sql dosyasını çalıştırarak tabloları oluşturun.
 
