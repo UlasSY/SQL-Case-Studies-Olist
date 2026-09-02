@@ -102,9 +102,9 @@ Projenin teknik derinliğini ve SQL hakimiyetini gösteren Seviye 1'den Seviye 6
 **1.** Depoyu klonlayın:       
 git clone [https://github.com/UlasSY/SQL-Case-Studies-Olist.git](https://github.com/UlasSY/SQL-Case-Studies-Olist.git) 
 
-**2.** PostgreSQL ortamınızda veritabanını oluşturup schema.sql dosyasını çalıştırarak tabloları oluşturun.
+**2.** PostgreSQL (Yerel veya Neon DB) ortamınızda schema.sql dosyasını çalıştırarak tabloları oluşturun.
 
-**3.** Veri setini yükledikten sonra analitik sorguları çalıştırmak için queries.sql dosyasını kullanabilirsiniz.
+**3.** Verileri yükledikten sonra analizleri incelemek için queries_modular.sql ve queries_explained.sql dosyalarını çalıştırabilirsiniz.
 
 ## 📜 License
 Bu proje MIT lisansı altında yayınlanmıştır.
